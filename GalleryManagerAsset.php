@@ -6,7 +6,6 @@ use yii\web\AssetBundle;
 
 class GalleryManagerAsset extends AssetBundle
 {
-    public $sourcePath = 'mark38/galleryManager/assets';
     public $css = [
         'galleryManager.css',
     ];
@@ -18,4 +17,10 @@ class GalleryManagerAsset extends AssetBundle
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
+
+    public function init()
+    {
+        $this->sourcePath = __DIR__ . '/assets/ckeditor';
+        parent::init();
+    }
 }
