@@ -20,7 +20,7 @@ class GalleryManagerAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = __DIR__ . '/assets/ckeditor';
+        $this->sourcePath = __DIR__ . '/assets';
         parent::init();
     }
 }
