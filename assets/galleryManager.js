@@ -15,7 +15,6 @@ var galleryManager = {
 
     prepareUpload : function(e) {
         if (!this.options.gallery_groups_id) {
-            alert(1);
             $.ajax({
                 type: 'POST',
                 url: this.options.url,
