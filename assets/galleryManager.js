@@ -23,7 +23,6 @@ var galleryManager = {
                 success: function(jsonData) {
                     galleryManager.options.gallery_groups_id = jsonData.gallery_groups_id;
                     if (galleryManager.options.group == 1) {
-                        alert(galleryManager.options.gallery_groups_id);
                         $('#input-'+galleryManager.options.widget_id).children('input').val(galleryManager.options.gallery_groups_id);
                     }
                     galleryManager.uploadGallery(e);
